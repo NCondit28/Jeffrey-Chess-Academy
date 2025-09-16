@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jeffrey's Chess Academy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 40px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-weight: 700;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* HERO with img (covers and stays responsive) */
+        .hero {
+            position: relative;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px #000;
+            overflow: hidden;
+        }
+        .hero img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.45);
+            z-index: 1;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            background-color: rgba(0,0,0,0.45);
+            padding: 20px 40px;
+            border-radius: 10px;
+            position: relative;
+            z-index: 2;
+            margin: 0;
+        }
+        .hero-credit {
+            position: absolute;
+            right: 10px;
+            bottom: 8px;
+            font-size: 0.75rem;
+            color: #fff;
+            z-index: 2;
+            background: rgba(0,0,0,0.35);
+            padding: 6px 8px;
+            border-radius: 6px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 2rem;
+                padding: 15px 20px;
+            }
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h3 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            color: #ffd700;
+        }
+        footer {
+            background-color: #222;
+            color: #bbb;
+            text-align: center;
+            padding: 25px 20px;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jeffrey's Chess Academy</h1>
+        <nav>
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="courses.html">Classes</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://chess.com/member/juicypineappl">My Chess.com profile</a>
+        </nav>
+    </header>
+
+    <div class="hero" aria-label="Chessboard with pieces">
+        <!-- Wikimedia Commons chessboard image (reliable host) -->
+        <img src="https://npr.brightspotcdn.com/dims4/default/625468a/2147483647/strip/true/crop/2048x1536+0+0/resize/1760x1320!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F0c%2F69%2Fbf9696454d83b2d901f34f97ed2d%2F490343064-1069120321912068-3027881452666416906-n.jpg"
+             alt="Chessboard with pieces (photo)">
+        <h2>Master the Game of Kings</h2>
+
+        <div class="hero-credit">
+            Image: Hawaii Chess Federation — <a href="https://npr.brightspotcdn.com/dims4/default/625468a/2147483647/strip/true/crop/2048x1536+0+0/resize/1760x1320!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F0c%2F69%2Fbf9696454d83b2d901f34f97ed2d%2F490343064-1069120321912068-3027881452666416906-n.jpg">Facebook</a>
+        </div>
+    </div>
+
+    <main>
+        <section>
+            <h3>Welcome to Jeffrey's Chess Academy!</h3>
+            <p>
+                Whether you're a beginner or a seasoned player, Jeffrey's Chess Academy offers expert coaching and resources to help you sharpen your skills and dominate the board.
+            </p>
+        </section>
+
+        <section>
+            <h3>Our Programs</h3>
+            <ul>
+                <li>Learn the basics and fundamentals</li>
+                <li>Develop strategy and tactics</li>
+                <li>Attend 1–2 hour workshops on strategy and endgames</li>
+                <li>Train with online or in-person coaching</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Boost your rating today!</h3>
+            <p>
+                Become part of a passionate chess community and start improving your game.
+                Contact us or click <a href="#contact">here</a> to learn more!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Jeffrey's Chess Academy | <a href="mailto:juicypineappl2009@gmail.com">juicypineappl2009@gmail.com</a>
+    </footer>
+</body>
+</html>
